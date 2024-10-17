@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Notas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="iconuwu.png">
+</head>
+<body>
+    <h1>Diario Personal</h1>
+    <div class="nota">
+        
+        <div class="opciones">
+            <button id="guardar">Guardar</button>
+            <button id="eliminar">Eliminar</button>
+            <button id="cambiar-fuente">Cambiar Fuente</button>
+            <button id="cambiar-tamaño">Cambiar Tamaño</button>
+            <button id="agregar-imagen">Agregar Imagen</button>
+            <textarea id="texto" placeholder="Escribe tu nota aquí"></textarea>
+        </div>
+        <div id="imagen-container"></div>
+    </div>
+
+    <script src="scriptt.js"></script>
+
+
+    <div class="toolbar">
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="brushSize" min="1" max="50" value="1">
+        <button id="erase">Goma de borrar</button>
+        <button id="clear">Limpiar</button>
+        <button id="undo">Deshacer</button>
+</div>
+
+    <canvas id="drawingCanvas" width="900" height="500"></canvas>
+    
+    <script src="java.js"></script>
+    <div id="pie">
+        <footer>
+            <p>&copy; 2024 Mi Curriculum. Todos los derechos reservados.</p>
+        </footer>
+</body>
+</html>
