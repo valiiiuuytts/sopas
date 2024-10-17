@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: beige;
+
+}
+textarea {
+    margin-top: 20px;
+    position: left;
+}
+h1 {
+text-align: center;
+font-size: 55px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.toolbar {
+   
+    margin: 53px;
+}
+
+.toolbar button {
+    margin: 0px;
+    margin-left: 40px;
+}
+input {
+    margin: 10px;
+    position:relative;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+.nota {
+    width: 80%;
+    margin: 40px;
+    padding: 20px;
+}
+
+.opciones {
+    margin-top: 20px;
+    
+}
+
+.opciones button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 20px;
+    position:center;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+    margin: 20px;
+    background-color: white;
+}
+
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+   
+
+
+
+
+
+canvas {
+    border: 1px solid #000;
+    cursor: crosshair;
+    margin-left: 80px;
+}
+
+#drawingCanvas { 
+    background-color: #f0f0f0; 
+
+}
